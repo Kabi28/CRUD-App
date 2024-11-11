@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>CRUD application using JavaScript</h3>
+    <section class="input">
+        <div class="input-item">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="input-item">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter Your Age">
+        </div>
+        <div class="input-item">
+            <label for="place">Place</label>
+            <input type="text" id="place" placeholder="Enter Your Location">
+        </div><br>
+        <button onclick="addToData()"><ion-icon name="bag-add-outline"></ion-icon>save</button>
+    </section>
+    <section>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Place</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="result"></tbody>
+        </table>
+    </section>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
